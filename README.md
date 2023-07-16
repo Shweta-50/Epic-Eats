@@ -50,7 +50,7 @@ In the project directory, you can run:
 
 <div  align="center" >
 
-<img  src="./src/img/.png"  alt="Google Clone search" />
+<img  src="./src/img/3.png"  alt="Google Clone search" />
 </div>
 
 ## Preview Order Placed
