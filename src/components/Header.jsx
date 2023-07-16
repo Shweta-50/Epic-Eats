@@ -13,7 +13,7 @@ import { app } from "../firebase.config";
 
 import Logo from "../img/brand-logo.png";
 import Avatar from "../img/avatar.png";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
 
@@ -28,7 +28,7 @@ const Header = () => {
   const login = async () => {
     if (!user) {
       const {
-        user: { refreshToken, providerData },
+        user: { providerData },
       } = await signInWithPopup(firebaseAuth, provider);
       dispatch({
         type: actionType.SET_USER,

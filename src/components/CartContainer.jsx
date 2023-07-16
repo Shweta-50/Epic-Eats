@@ -7,7 +7,7 @@ import { useStateValue } from "../context/StateProvider";
 import { actionType } from "../context/reducer";
 import EmptyCart from "../img/emptyCart.svg";
 import CartItem from "./CartItem";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { app } from "../firebase.config";
 
@@ -23,7 +23,7 @@ const CartContainer = () => {
   const login = async () => {
     if (!user) {
       const {
-        user: { refreshToken, providerData },
+        user: { providerData },
       } = await signInWithPopup(firebaseAuth, provider);
       dispatch({
         type: actionType.SET_USER,

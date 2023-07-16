@@ -27,7 +27,7 @@ const RowContainer = ({ flag, data, scrollValue }) => {
   const productAdded = (item) => {
     setItems([...cartItems, item]);
     toast.success("Product added to the cart", {
-      position: toast.POSITION.TOP_CENTER,
+      position: toast.POSITION.BOTTOM_CENTER,
     });
   };
   useEffect(() => {
