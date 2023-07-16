@@ -20,7 +20,7 @@
 
 ## Demo 🔥
 
-<a href="" target="_blank">Live Demo</a>
+<a href="https://epic-eats-food.netlify.app/" target="_blank">Live Demo</a>
 
 ## Available Scripts 🔥
 
