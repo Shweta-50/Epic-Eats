@@ -3,6 +3,7 @@ import Delivery from "../img/delivery.png";
 import HeroBg from "../img/heroBg.png";
 import { heroData } from "../utils/data";
 import { motion } from "framer-motion";
+import { BiRupee } from "react-icons/bi";
 
 const HomeContainer = () => {
   return (
@@ -72,7 +73,10 @@ const HomeContainer = () => {
                 </p>
 
                 <p className="text-sm font-semibold text-headingColor">
-                  <span className="text-xs text-red-600">$</span> {n.price}
+                  <span className="text-xs text-red-600">
+                    <BiRupee className=" text-2xl" />
+                  </span>{" "}
+                  {n.price}
                 </p>
               </motion.div>
             ))}
