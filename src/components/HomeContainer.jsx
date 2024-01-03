@@ -38,7 +38,7 @@ const HomeContainer = () => {
 
         <button
           type="button"
-          className="bg-gradient-to-br from-orange-400 to-orange-500 hover:scale-x-110 text-white w-full md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
+          className="bg-gradient-to-br from-orange-400 to-orange-500 hover:scale-x-110 text-white w-auto  md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
         >
           Order Now
         </button>
@@ -50,14 +50,14 @@ const HomeContainer = () => {
           alt="hero-bg"
         />
 
-        <div className=" w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-40  xl:px-40  py-4 gap-4 flex-wrap">
+        <div className=" w-full h-full  absolute top-0 left-0 flex items-center justify-center 2xl:px-50 py-4 gap-4 flex-wrap">
           {heroData &&
             heroData.map((n) => (
               <motion.div
                 key={n.id}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                className="lg:w-190 p-4 animate-fade-in-up bg-cardOverlay  backdrop-blur-md rounded-3xl flex flex-col items-center justify-center drop-shadow-lg"
+                className="  animate-fade-in-up bg-cardOverlay  backdrop-blur-md rounded-3xl flex flex-col items-center justify-center drop-shadow-lg px-2 pb-4"
               >
                 <img
                   src={n.imageSrc}
